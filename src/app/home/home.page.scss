@@ -1,27 +1,41 @@
-#container {
+.folders {
+  background-color: #1c2c1f;
+
   text-align: center;
+}
+ion-card-subtitle {
+  color: #e0f2ff;
+  font-size: large  ;
+}
+p {
+  margin: 2px; 
+  font-size: 14px;
+}
 
-  position: absolute;
-  left: 0;
+.create_element_buttons {
+  position: fixed;
+  bottom: 0;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+}
+.create_element_button {
+  padding-bottom: 10px;
+  padding-right: 10px;
+}
+.side_information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.list_of_files {
+  display: flexbox;
+  flex-direction: row;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.notes {
+  background-color: #e0f2ff;
+  color: #1c2c1f;
 }
-
-#container a {
-  text-decoration: none;
+.notes ion-card-title {
+  color: #1c2c1f;
 }
