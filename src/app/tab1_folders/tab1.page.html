@@ -1,0 +1,14 @@
+<ion-content [fullscreen]="true" *ngIf="FOLDERS">
+  <ion-list *ngFor="let folder of FOLDERS">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{folder.name}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>{{folder.text}}</ion-card-content>
+      <div>
+        <ion-item href="#">{{folder.theme}}</ion-item>
+        <ion-item href="#">{{folder.date}}</ion-item>
+      </div>
+    </ion-card>
+  </ion-list>
+</ion-content>
