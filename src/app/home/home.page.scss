@@ -12,6 +12,10 @@ p {
   font-size: 14px;
 }
 
+.folder_icon {
+  font-size: xxx-large;
+  color: #4b674a;
+}
 .create_element_buttons {
   position: fixed;
   bottom: 0;
@@ -27,14 +31,17 @@ p {
   justify-content: space-around;
 }
 
-.list_of_files {
-  display: flexbox;
-  flex-direction: row;
-}
-
 .notes {
   background-color: #e0f2ff;
   color: #1c2c1f;
+  height: 22vh;
+}
+.notes ion-card-header {padding-bottom: 5px;}
+.note_content {
+  height: 45%;
+  overflow: hidden;
+
+  text-align: center;
 }
 .notes ion-card-title {
   color: #1c2c1f;

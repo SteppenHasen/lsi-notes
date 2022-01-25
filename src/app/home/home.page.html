@@ -1,10 +1,10 @@
-<ion-content class="list_of_files" [fullscreen]="true" *ngIf="folders">
+<ion-content class="list_of_files" [fullscreen]="true">
   <ion-row>
     <ion-col col-6 *ngFor="let folder of folders">
       <ion-card class="folders">
         <ion-card-header>
           <ion-card-title>
-            <ion-icon name="folder-open"></ion-icon>
+            <ion-icon class="folder_icon" name="folder-open"></ion-icon>
           </ion-card-title>
           <ion-card-subtitle>{{folder.name}}</ion-card-subtitle>
         </ion-card-header>
@@ -16,13 +16,13 @@
     </ion-col>
   </ion-row>
 
-  <ion-row *ngIf="notes">
+  <ion-row>
     <ion-col col-12 *ngFor="let note of notes">
       <ion-card class="notes">
         <ion-card-header>
           <ion-card-title>{{note.name}}</ion-card-title>
         </ion-card-header>
-        <ion-card-content>{{note.content}}</ion-card-content>
+        <ion-card-content class="note_content">{{note.content}}</ion-card-content>
         <div class="side_information">
           <p href="#">{{note.date}}</p>
         </div>
@@ -36,7 +36,7 @@
     <ion-icon name="folder"></ion-icon>
   </ion-fab-button>
   
-  <ion-fab-button color="tertiary" class="create_element_button">
+  <ion-fab-button color="tertiary" class="create_element_button" [routerLink]="'/create-note'">
     <ion-icon name="create"></ion-icon>
   </ion-fab-button>
 </ion-fab>

@@ -1,0 +1,10 @@
+<form [formGroup]="createNote" (ngSubmit)="createNoteFunc()">
+  <ion-item>
+    <ion-label>Enter note name:</ion-label>
+    <ion-input type="text" formControlName="name"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-textarea formControlName="content"></ion-textarea>
+  </ion-item>
+  <button ion-button type="submit">Submit</button>
+</form>
