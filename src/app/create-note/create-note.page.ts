@@ -13,12 +13,15 @@ export class CreateNotePage implements OnInit {
     this.createNote = this.formBuilder.group({
       name: ['', Validators.required],
       content: [''],
-      date: Date.now().toLocaleString()
+      theme: [''],
+      importance: [''],
+      isList: []
     })
   }
   
   createNoteFunc() {
-    console.log(this.createNote.value)
+    let data = this.createNote.value
+    alert(data)
   }
 
   ngOnInit() {

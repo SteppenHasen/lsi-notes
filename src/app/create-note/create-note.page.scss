@@ -1,0 +1,41 @@
+.input_name, 
+.input_content, 
+ion-textarea, 
+.selectors, 
+.radios,
+.radio {
+    padding: 10px;
+    background-color: #e0f2ff;
+    text-align: left;
+
+    color: #060b0d;
+
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.input_content::part(native), 
+.input_name::part(native), 
+.selectors::part(native),
+.radios::part(native),
+.radio::part(native) {
+    background-color: #e0f2ff;
+}
+
+.submit_button {
+    width: 40vw;
+    height: 50px;
+    margin-left: 30%;
+
+    color: #060b0d;
+    background-color: #e0f2ff;
+    border-radius: 5px;
+}
+
+ion-list-header {
+    color: #060b0d;
+}
+
+.selectors, .radio {margin: 0 5px;}
+
+.text_input {height: 40vh;}

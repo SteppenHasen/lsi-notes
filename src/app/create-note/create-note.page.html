@@ -1,10 +1,49 @@
 <form [formGroup]="createNote" (ngSubmit)="createNoteFunc()">
-  <ion-item>
+  <ion-item class="input_name">
     <ion-label>Enter note name:</ion-label>
     <ion-input type="text" formControlName="name"></ion-input>
   </ion-item>
-  <ion-item>
-    <ion-textarea formControlName="content"></ion-textarea>
+  
+  <ion-row class="radio_row">
+    <ion-col>
+      <ion-item class="selectors">
+        <ion-select value="socion" okText="Okay" cancelText="Dismiss" formControlName="theme">
+          <ion-select-option value="socion">Socion</ion-select-option>
+          <ion-select-option value="stihi">Stihi</ion-select-option>
+          <ion-select-option value="weather">Weather</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+
+    <ion-col>
+      <ion-item class="selectors">
+        <ion-select value="first" okText="Okay" cancelText="Dismiss" formControlName="importance">
+          <ion-select-option value="first">First</ion-select-option>
+          <ion-select-option value="second">Second</ion-select-option>
+          <ion-select-option value="third">Third</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+    <ion-row radio-group class="radio_row" formControlName="isList">
+      <ion-col>
+        <ion-item class="radio">
+          <ion-label>Note</ion-label>
+          <ion-radio value="false"></ion-radio>
+        </ion-item>
+      </ion-col>
+
+      <ion-col>
+        <ion-item class="radio">
+          <ion-label>List</ion-label>
+          <ion-radio value="true"></ion-radio>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+
+  <ion-item class="input_content">
+    <ion-textarea class="text_input" formControlName="content"></ion-textarea>
   </ion-item>
-  <button ion-button type="submit">Submit</button>
+  <button class="submit_button" ion-button type="submit">Submit</button>
 </form>
