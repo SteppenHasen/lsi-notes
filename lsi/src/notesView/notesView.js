@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import { Text, FAB } from "react-native-paper";
+import styles from './styles';
 
 export default function NotesView({ navigation }) {
     return(
@@ -26,33 +27,3 @@ export default function NotesView({ navigation }) {
     )
 }
 
-const styles = StyleSheet.create({
-    container:{
-        flex:1,
-        backgroundColor: '#000',
-        paddingVertical: 20,
-        paddingHorizontal: 10,
-    },
-    titleContainer:{
-        alignItems: "center",
-        justifyContent: "center",
-        flex: 1
-    },
-    title: {
-        fontSize: 20
-    },
-    fab: {
-        position: "absolute",
-        margin: 20,
-        right: 0,
-        bottom: 10,
-        backgroundColor: '#219653'
-    },
-    fab2: {
-        position: "absolute",
-        margin: 20,
-        right: 0,
-        bottom: 70,
-        backgroundColor: '#219653'
-    }
-})
