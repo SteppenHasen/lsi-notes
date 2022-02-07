@@ -1,6 +1,9 @@
 {
   "expo": {
     "name": "lsi",
+    "plugins": [
+      "@react-native-firebase/app"
+    ],
     "slug": "lsi",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -20,10 +23,12 @@
       "supportsTablet": true
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "lsi.app"
     },
     "web": {
       "favicon": "./assets/favicon.png"

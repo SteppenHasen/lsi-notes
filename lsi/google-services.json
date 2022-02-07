@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1061995969313",
+    "project_id": "lsi-notes",
+    "storage_bucket": "lsi-notes.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061995969313:android:727534d6b4028c1b6adc60",
+        "android_client_info": {
+          "package_name": "taavi.app1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061995969313-um20tqa8ljglgmlkdij4gcll5fj3gmj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpdhGGcH_5z7qMLtK85nX9MxijomQR0_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1061995969313-um20tqa8ljglgmlkdij4gcll5fj3gmj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
